@@ -21,7 +21,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	info := []string{"My awesome service"}
+	info := []string{"Primelab Service Node"}
 	service, err := mdns.NewMDNSService(host, serviceTag, "", "", 8000, nil, info)
 	if err != nil {
 		log.Fatal(err)

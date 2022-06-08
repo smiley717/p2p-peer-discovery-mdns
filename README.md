@@ -1,5 +1,38 @@
-mdns
-====
+# p2p-peer-discovery-mdns
+
+Forked from [hashicorp/mdns](https://github.com/hashicorp/mdns) for PoW.
+
+
+## To Run
+First, we need to start server 
+
+### Run Server (./server)
+
+```
+go build
+./server
+```
+
+Use another server tag
+```
+./server <server-tag> // maybe hash tag
+./server abc
+```
+
+### Run client (./client)
+
+```
+go build
+./client
+```
+
+Check out other server:
+```
+./client <server-tag>
+./client abc
+```
+
+## mdns
 
 Simple mDNS client/server library in Golang. mDNS or Multicast DNS can be
 used to discover services on the local network without the use of an authoritative
